@@ -19,8 +19,27 @@
         <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
 
-    <dependencies>
+    <repositories>
+        <repository>
+            <!-- 			<releases> -->
+            <!-- 				<enabled>false</enabled> -->
+            <!-- 			</releases> -->
+            <!-- 			<snapshots> -->
+            <!-- 				<enabled>true</enabled> -->
+            <!-- 				<updatePolicy>always</updatePolicy> -->
+            <!-- 			</snapshots> -->
+            <id>nexus</id>
+            <name>nexus Repositories</name>
+            <url>http://10.0.3.208:8081/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
 
+    <dependencies>
+        <!--<dependency>-->
+            <!--<groupId>com.autoframework</groupId>-->
+            <!--<artifactId>auto-business-exception</artifactId>-->
+            <!--<version>1.0.2</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
